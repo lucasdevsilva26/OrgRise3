@@ -43,7 +43,7 @@ header {
 }
 #header-buttons {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 1rem;
 }
 #header-buttons button {
@@ -67,9 +67,13 @@ header {
   color: white;
 }
 #header-buttons__menu {
-  color: white;
+  color: var(--buttonColor);
 }
-
+@media (max-width: 580px) {
+    #header-buttons__support {
+        display: none;
+    }
+}
 main {
   flex: 1;
 }
