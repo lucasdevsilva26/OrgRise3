@@ -14,11 +14,15 @@
 
   user-select: none;
 }
+html {
+    overflow-x: hidden;
+}
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  overflow-x: hidden;
   height: 100vh;
 }
 header {
