@@ -1,0 +1,89 @@
+:root {
+  --borderColor: #36d3a6;
+
+  --titleColor: #878787;
+
+  --buttonColor: #368cd3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+
+  user-select: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+
+  border-bottom: 0.125rem solid #36d3a6;
+
+  color: var(--titleColor);
+}
+#header-logo {
+  display: flex;
+  align-items: baseline;
+}
+#header-buttons {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+#header-buttons button {
+  padding: 0.125rem 1rem;
+
+  font-size: 1.25rem;
+}
+#header-buttons__support {
+  color: var(--buttonColor);
+}
+#header-buttons__login {
+  border-radius: 9999rem;
+  border: 0.125rem solid var(--buttonColor);
+
+  color: var(--buttonColor);
+}
+#header-buttons__signup {
+  border-radius: 9999rem;
+  background-color: var(--buttonColor);
+
+  color: white;
+}
+#header-buttons__menu {
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0.5rem;
+
+  border-top: 0.125rem solid #36d3a6;
+}
+svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
