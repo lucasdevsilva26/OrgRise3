@@ -20,8 +20,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/start.css" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <header>
@@ -32,7 +32,6 @@
 
       <nav id="header-buttons">
         <a href="#" id="header-buttons__support">Suporte</a>
-        <a href="../html/singup.html" id="header-buttons__signup">Registrar-se</a>
         <a href="/html/login.html" id="header-buttons__login">Entrar</a>
         <a href="#" id="header-buttons__menu">
           <i class="fa-solid fa-bars"></i>
@@ -41,38 +40,32 @@
     </header>
 
     <main>
-      <aside>
-        <button>Entrar</button>
-        <button>Registrar-se</button>
-        <button>Suporte</button>
-      </aside>
+      <h1>Registre-se</h1>
+      <p>Venha fazer parte da nossa comunidade!</p>
 
-      <h1>Organize seu estoque da melhor forma</h1>
-
-      <div>
-        <p>
-          Aqui você pode organizar seu estoque integrando ele com a entrada e
-          saída de todos os seus produtos, fazer analises de todas as suas
-          movimentações financeiras, criar orçamentos, agendar entregas e muito
-          mais!
-        </p>
-
-        <img src="/img/storage-image-1.jpg" alt="" />
-      </div>
-
-      <section>
-        <h1>Adicione produtos com facilidade</h1>
+      <form>
+        <div>
+          <label for="">Email</label>
+          <input type="text" placeholder="Digite seu email" name="" id="" />
+        </div>
 
         <div>
-          <p>
-            Todos os produtos podem ser adicionados com facilidade e fluidez,
-            lhe permitindo modificar ou alterar os valores e produtos até chegar
-            no melhor resultado para você.
-          </p>
-
-          <img src="/img/interprise-image-1.jpg" alt="" />
+          <label for="">Senha</label>
+          <input type="text" placeholder="Digite sua senha" name="" id="" />
         </div>
-      </section>
+
+        <div>
+          <label for="">Confirmar Senha</label>
+          <input
+            type="text"
+            placeholder="Digite sua senha novamente"
+            name=""
+            id=""
+          />
+        </div>
+
+        <button type="submit">Registrar-se</button>
+      </form>
     </main>
 
     <footer>&copy;2026 Orgrise, todos os direitos reservados.</footer>

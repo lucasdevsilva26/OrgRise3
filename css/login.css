@@ -1,0 +1,62 @@
+:root {
+  --borderColor: #36d3a6;
+
+  --titleColor: #878787;
+
+  --buttonColor: #368cd3;
+}
+main {
+  justify-content: center;
+}
+main h1 {
+    font-size: 2.5rem;
+    color: #368cd3;
+}
+main p {
+    font-size: 1.25rem;
+    color: var(--titleColor);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+
+  margin: 4rem;
+
+  width: 24rem;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+form label {
+  align-self: flex-start;
+
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--titleColor);
+}
+form input {
+  padding: 0.125rem 1rem;
+
+  border-radius: 9999rem;
+  border: 0.15rem solid var(--borderColor);
+
+  font-size: 1.5rem;
+  outline: none;
+}
+form button {
+    margin: 2.5rem;
+  padding: 1rem;
+  width: 100%;
+
+  border-radius: 9999rem;
+  background-color: var(--buttonColor);
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
