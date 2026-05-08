@@ -26,12 +26,12 @@
   </head>
   <body>
     <header>
-      <div id="header-logo">
+      <a href="/index.html" id="header-logo">
         <div></div>
-        <a href="/index.html"><h1>rgrise</h1></a>
-      </div>
+        <h1>rgrise</h1>
+      </a>
 
-     <nav id="header-buttons">
+      <nav id="header-buttons">
         <a href="#" id="header-buttons__support">Suporte</a>
         <a href="/html/login.html" id="header-buttons__login">Entrar</a>
         <button href="#" id="header-buttons__menu">
@@ -51,32 +51,52 @@
       <p>Venha fazer parte da nossa comunidade!</p>
 
       <form>
-        <div>
+        <div class="formInputContainer">
           <label for="">Email</label>
-          <input type="text" placeholder="Digite seu email" name="" id="" />
+
+          <div class="formInputArea">
+            <input type="email" placeholder="Digite seu email" name="" id="" required/>
+          </div>
         </div>
 
-        <div>
+        <div class="formInputContainer">
           <label for="">Senha</label>
-          <input type="text" placeholder="Digite sua senha" name="" id="" />
+
+          <div class="formInputArea">
+            <input type="text" placeholder="Digite sua senha" name="" id="" required/>
+
+            <button type="button" class="toggleView">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
         </div>
 
-        <div>
+        <div class="formInputContainer">
           <label for="">Confirmar Senha</label>
-          <input
-            type="text"
-            placeholder="Digite sua senha novamente"
-            name=""
-            id=""
-          />
+
+          <div class="formInputArea">
+            <input
+              type="text"
+              placeholder="Digite sua senha novamente"
+              name=""
+              id=""
+              required
+            />
+
+            <button type="button" class="toggleView">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
         </div>
 
-        <button type="submit">Registrar-se</button>
+        <button type="submit" id="access-button" disabled>Registrar-se</button>
       </form>
     </main>
 
     <footer>&copy;2026 Orgrise, todos os direitos reservados.</footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/toggleView.js"></script>
+    <script src="../js/account-form.js"></script>
   </body>
 </html>
