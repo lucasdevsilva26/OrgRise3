@@ -107,17 +107,17 @@ header {
 }
 @media (max-width: 33rem) {
   #header-buttons__support {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 27.5rem) {
   #header-buttons__signup {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 18rem) {
   #header-buttons__login {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 12rem) {
