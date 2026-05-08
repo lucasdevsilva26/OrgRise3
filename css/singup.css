@@ -1,4 +1,4 @@
-@media (max-width: 26rem) {
+@media (max-width: 21rem) {
   #header-buttons__support {
     display: none !important;
   }
@@ -6,8 +6,8 @@
     display: block;
   }
 }
-@media (max-width: 23rem) {
-  #header-buttons__signup {
+@media (max-width: 19rem) {
+  #header-buttons__login {
     display: none !important;
   }
 }
