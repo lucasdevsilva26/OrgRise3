@@ -10,5 +10,7 @@ for (let tV of toggleViwers) {
     tVInput.type = tVInput.type == "password" ? tV.dataset.inputType : "password";
     
     tV.querySelector("i").setAttribute("class", tVInput.type == "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye");
+    
+    tVInput.focus()
   });
 }
