@@ -9,6 +9,6 @@ for (let tV of toggleViwers) {
   tV.addEventListener("click", () => {
     tVInput.type = tVInput.type == "password" ? tV.dataset.inputType : "password";
     
-    tV.querySelector("i").setAttribute("class", VInput.type == "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye");
+    tV.querySelector("i").setAttribute("class", tVInput.type == "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye");
   });
 }
